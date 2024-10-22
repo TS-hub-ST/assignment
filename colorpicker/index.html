@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Color Picker Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Color Picker Tool</h1>
+    <input type="color" id="colorPicker">
+    <div class="color-display">
+        <div id="colorBox" class="color-box"></div>
+        <div class="color-info">
+            <div class="color-format">
+                <span>Hex: </span>
+                <span id="hexValue"></span>
+                <button onclick="copyToClipboard('hexValue')">Copy</button>
+            </div>
+            <div class="color-format">
+                <span>RGB: </span>
+                <span id="rgbValue"></span>
+                <button onclick="copyToClipboard('rgbValue')">Copy</button>
+            </div>
+            <div class="color-format">
+                <span>HSL: </span>
+                <span id="hslValue"></span>
+                <button onclick="copyToClipboard('hslValue')">Copy</button>
+            </div>
+            <div class="color-format">
+                <span>Name: </span>
+                <span id="nameValue"></span>
+                <button onclick="copyToClipboard('nameValue')">Copy</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
